@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temel HTML Yapısı</title>
+</head>
+<body>
+
+        <fieldset>
+          <legend><p><b>RABİA AKKUS</b></p></legend>  
+            <form action="https://yazilimbilisim.net/ogrenciler/kontrol.php" method="post">
+            <label for="anahtar">Güvenlik Anahtarı:</label><br><br>
+            <input type="text" id="anahtar" name="anahtar" placeholder="65348764382764832897"><br><br>
+            <label>Eposta:</label> <br><br>
+            <input type="email" name="Eposta" placeholder="Örn:admin@mail.com" required="zorunlu yer"><br><br>
+            <label for="dtarih">Doğum Tarihi:</label><br><br>
+            <input type="date" id="dtarih" name="dtarih" value="2000-01-01" min="2000-01-01" max="2010-12-31"><br><br>
+            <label for="sifre">Şifreniz:</label><br><br>
+            <input type="password" id="sifre" name="sifre" minlength="8" maxlength="8" required><br><br>
+         
+         
+            <label for="Avatar">Avatar Seçimi:</label><br><br>
+            <input type="text" id="Avatar" name="avatar" list="avatar" size="5"><br><br>
+            <datalist id="avatar">
+             <option value="dory">
+             <option value="nemo">
+             <option value="moana">
+             <option value="rango">
+            </datalist>
+           
+        </fieldset> <br>
+        <button type="submit"> Kaydet</button> 
+        <button type="reset"> Temizleme</button>
+
+
+</form>
+
+</body>
+</html>
